@@ -1,25 +1,25 @@
 """  MakeUpperCaseClientUsingUDP.py
-   
-  Yuqi Liu, Libin Feng                                 
-  CISC-650 Fall 2014                    
-  Sep 24, 2014                                         
+
+  Yuqi Liu, Libin Feng
+  CISC-650 Fall 2014
+  Sep 24, 2014
   This module will:
         a. Send an user-input lowercase sentence to the server;
-        b. Receive the converted sentence from the server and displays on the screen.             
+        b. Receive the converted sentence from the server and displays on the screen.
 """
 
 from socket import *
 
-# STUDENTS - replace with your server machine's name 
-serverName = "hostname"
+# STUDENTS - replace with your server machine's name
+serverName = "128.4.246.11"
 
-# STUDENTS - randomize your port number (use the same one in the server)         
-# This port number in practice is often a "Well Known Number"  
-serverPort = 12000
+# STUDENTS - randomize your port number (use the same one in the server)
+# This port number in practice is often a "Well Known Number"
+serverPort = 35281
 
 # create UDP socket
 # Error in book? clientSocket = socket(socket.AF_INET, socket.SOCK_DGRAM)
-#    corrected by  Amer 4-2013 
+#    corrected by  Amer 4-2013
 clientSocket = socket(AF_INET, SOCK_DGRAM)
 
 

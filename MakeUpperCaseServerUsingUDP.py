@@ -11,9 +11,9 @@
 
 from socket import *
 
-# STUDENTS - you should randomize your port number.         
-# This port number in practice is often a "Well Known Number" 
-serverPort = 12000
+# STUDENTS - you should randomize your port number.
+# This port number in practice is often a "Well Known Number"
+serverPort = 12306
 
 # create UDP socket and bind to your specified port
 serverSocket = socket(AF_INET, SOCK_DGRAM)
@@ -28,12 +28,12 @@ while 1:
 
     # output to console the sentence received from client over UDP
     print ("Received from Client: ", message)
-	
+
     # change client's sentence to upper case letters
     modifiedMessage = message.upper()
-	
+
     # send back modified sentence to the client using remembered address
     serverSocket.sendto(modifiedMessage, clientAddress)
- 
+
     # output to console the modified sentence sent back to client
     print ("Sent back to Client: ", modifiedMessage)
