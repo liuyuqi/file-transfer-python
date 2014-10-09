@@ -64,7 +64,7 @@ def startUsingUDP():
 
 	
 # server machine's name 
-serverName = "128.4.53.163"
+serverName = "hostname"
 
 # port numbers of server  
 serverTCPPort = 12306
